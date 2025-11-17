@@ -528,7 +528,7 @@ if __name__ == "__main__":
     
     # Lista di URLs da processare
     trustpilot_urls = [
-        "https://www.trustpilot.com/review/academia.tv"
+        "URL1",
         # Aggiungi altri URL qui
     ]
     
@@ -539,7 +539,7 @@ if __name__ == "__main__":
         print("💾 Un CSV separato per ogni URL sul Desktop")
         
         # Scraping multi-URL
-        results = scraper.scrape_multiple_urls(trustpilot_urls, max_pages_per_url=30)
+        results = scraper.scrape_multiple_urls(trustpilot_urls, max_pages_per_url=20)
         
         # Riepilogo finale
         successful = sum(1 for r in results if r['status'] == 'success')
